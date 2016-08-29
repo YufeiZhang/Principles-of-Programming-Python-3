@@ -4,13 +4,14 @@
 
 # Including
 
->1) Lectures
+* 1) Lectures
+> Lectures
 
->2) Labs
+* 2) Labs
 
->3) Quizzes
+* 3) Quizzes
 
->4) Assignments
+* 4) Assignments
 
 
 # Contributors
