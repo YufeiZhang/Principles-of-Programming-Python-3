@@ -1,9 +1,9 @@
 # Principles-of-Programming
-
 * Using Python-3
-===========================
+
 
 # Including
+
 1) Lectures
 
 2) Labs
@@ -12,6 +12,7 @@
 
 4) Assignments
 
-==========================
+
 # Contributors
+
 Yufei Zhang
