@@ -11,14 +11,13 @@ try:
 	m = 0
 	for i in range(n):
 		m += i
-		print(m)
-
+		print("  "* (n-i-1), end = "")
 		for j in range(2*i + 1):
 			if j > i:
-				print("W", end = " ")
-				
+				print(chr(((m + i+i - j)%26) + 65), end = " ")
 			else:
 				print(chr(((m + j)%26) + 65), end = " ")
+		print("  "* (n-i), end = "")
 		print()
 
 except ValueError:
