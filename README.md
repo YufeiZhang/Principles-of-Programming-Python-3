@@ -1,5 +1,10 @@
 # Principles-of-Programming
+
 * Using Python-3
+
+  if you miss any module, run
+
+  > $ sudo python3 -m pip install module_name
 
 
 # Including
