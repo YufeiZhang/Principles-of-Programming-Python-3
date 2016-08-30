@@ -11,12 +11,12 @@ try:
 	m = 0
 	for i in range(n):
 		m += i
-		print("  "* (n-i-1), end = "")
+		print(" "* (n-i-1), end = "")
 		for j in range(2*i + 1):
 			if j > i:
-				print(chr(((m + i+i - j)%26) + 65), end = " ")
+				print(chr(((m + i+i - j)%26) + 65), end = "")
 			else:
-				print(chr(((m + j)%26) + 65), end = " ")
+				print(chr(((m + j)%26) + 65), end = "")
 		print("  "* (n-i), end = "")
 		print()
 
