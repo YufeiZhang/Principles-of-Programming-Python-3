@@ -1,8 +1,8 @@
 # Principles-of-Programming
 
-* Using Python-3
+* Using Python 3.5.2
 
-  if you miss any module, run
+  If you miss any module, run
 
   > $ sudo python3 -m pip install module_name
 
@@ -15,23 +15,67 @@
 
   > Lecture2
 
+  > Lecture3
+
+  > Lecture4
+
+  > Lecture5
+
+  > Lecture6
+
+  > Lecture7
+
+  > Lecture8
+
+  > Lecture9
+
+  > Lecture10
+
+
 * Labs
 
-  > Lab 1
+  > Lab1
 
-  > Lab 2
+  > Lab2
   
-  > Lab 3
+  > Lab3
   
-  > Lab 4
+  > Lab4
   
-  > Lab 5
+  > Lab5
+
+  > Lab6
+
+  > Lab7
+
 
 * Quizzes
 
+  > quiz1
+
+  > quiz2
+
+  > quiz3
+
+  > quiz4
+
+
 * Assignments
+
+  > assignment1
+
+  > assignment2
+
+  > assignment3
 
 
 # Contributors
 
 Yufei Zhang
+
+
+# Prof
+
+Eric  Martin
+
+
