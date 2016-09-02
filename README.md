@@ -6,6 +6,12 @@
 
   > $ sudo python3 -m pip install module_name
 
+  In python, default recursion depth limit is 999, you can change it using
+
+  > import sys
+
+  > sys.setrecursionlimit(1000000) to set the limit to one million
+
 
 # Including
 
