@@ -52,9 +52,9 @@
 
   > Lab6
 
-    > from itertools import permutations
+    > from itertools import permutations as pm
 
-    > from itertools import combinations
+    > from itertools import combinations as cm
 
   > Lab7
 
