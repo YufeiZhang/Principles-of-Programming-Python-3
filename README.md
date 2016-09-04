@@ -52,6 +52,10 @@
 
   > Lab6
 
+    > from itertools import permutations
+
+    > from itertools import combinations
+
   > Lab7
 
 
