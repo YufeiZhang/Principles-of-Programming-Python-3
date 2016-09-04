@@ -6,11 +6,23 @@
 
   > $ sudo python3 -m pip install module_name
 
+
   In python, default recursion depth limit is 999, you can change it using
 
   > import sys
 
   > sys.setrecursionlimit(1000000) to set the limit to one million
+
+
+  In python, here is a build in function for permutations and combinations
+
+  > from itertools import permutations as pm
+
+  > from itertools import combinations as cm
+
+  > print(list(pm([1,2,3,4],2)))
+
+  > print(list(cm([1,2,3,4],2)))
 
 
 # Including
@@ -51,10 +63,6 @@
   > Lab5
 
   > Lab6
-
-    > from itertools import permutations as pm
-
-    > from itertools import combinations as cm
 
   > Lab7
 
