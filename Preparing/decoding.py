@@ -22,11 +22,14 @@ def  decode(m, n):
 		if ch != codes[-1]:
 			out += str(ch)+", "
 		else:
-			out += str(ch)+'}'
-	
-	return out
+			out += str(ch)
+	return out+'}'
+
 
 if __name__ == '__main__':
+	print(decode(2,11))
+	print(decode(3,586))
 	print(decode(8,4223296))
+	print(decode(9,0))
 
 
