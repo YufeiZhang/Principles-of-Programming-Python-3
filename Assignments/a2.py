@@ -1,1 +1,3 @@
-a2.py
+import sys
+
+print(sys.argv)
