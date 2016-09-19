@@ -1,9 +1,26 @@
-from argparse import ArgumentParser
+import sys
 
-parser = ArgumentParser()
-parser.add_argument('--image_file', dest = 'image_filename', required = True)
-parser.add_argument('--alphabet', dest = 'alphabet', required = False)
-parser.add_argument('--nb_of_pixels', dest = 'nb_of_pixels', required = False)
-args = parser.parse_args()
+try:
+	command = sys.argv
+	filename = ''
+	print_it = False
+	print(command)
 
-image_filename = args.image_filename
+	if len(command) != 4:
+		if len(command) != 3:
+			raise OSError
+
+	if command[0] == 'read.py' and '--file' in command:
+		f_index = command.index('--file') + 1
+		if f_index < len(command):
+			filename = command[f_index]
+	print(filename)
+	print(print_it)
+
+
+	file = open(filename)
+
+except OSError:
+	print('I expect --file followed by filename and possibly -print as command line arguments.')
+
+
