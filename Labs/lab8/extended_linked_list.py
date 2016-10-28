@@ -1,4 +1,4 @@
-# Written by Eric Martin for COMP9021
+# LL = ExtendedLinkedList([3,2,4,1,2,4,1,3]); LL.remove_duplicates(); LL.print()
 
 from linked_list import *
 
@@ -7,49 +7,19 @@ class ExtendedLinkedList(LinkedList):
         super().__init__(L)
 
     def remove_duplicates(self):
-        '''
-        >>> LL = ExtendedLinkedList()
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        >>> LL = ExtendedLinkedList([1])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1
-        >>> LL = ExtendedLinkedList([1, 1])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1
-        >>> LL = ExtendedLinkedList([1, 1, 1])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1
-        >>> LL = ExtendedLinkedList([1, 1, 1, 2, 2, 2])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1, 2
-        >>> LL = ExtendedLinkedList([1, 2, 1, 2, 1, 2])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1, 2
-        >>> LL = ExtendedLinkedList([1, 2, 3])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1, 2, 3
-        >>> LL = ExtendedLinkedList([1, 1, 1, 2, 1, 2, 1, 2, 3, 3, 2, 1])
-        >>> LL.remove_duplicates()
-        >>> LL.print()
-        1, 2, 3
-        '''
         if not self.head:
             return
         current_node = self.head
         while current_node:
+            print(current_node.value)
             node = current_node
             while node.next_node:
+                print('next ->',node.next_node.value)
                 if node.next_node.value == current_node.value:
                     node.next_node = node.next_node.next_node
                 else:
                     node = node.next_node
+                print('----------------')
             current_node = current_node.next_node
     
 if __name__ == '__main__':
