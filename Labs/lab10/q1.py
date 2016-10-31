@@ -1,6 +1,10 @@
 import sys
 from general_tree import *
 
+'''
+Not only do the Chinese and Australian education systems have differences,
+but they also have many similarities 
+'''
 
 def generate_nonblank_lines(input_file):
     nonblank_lines = []
@@ -52,18 +56,21 @@ def _print_out(tree, level):
     print(tree.value)
     for subtree in tree.children:
         _print_out(subtree, level + 1)
-        
-        
-try:
-    input_file = open('tree.txt')
-except FileNotFoundError:
-    print('Sorry, could not open file tree.txt.')
-    sys.exit()
+
+
+
+def main():
+    try:
+        input_file = open('tree.txt')
+    except FileNotFoundError:
+        print('Sorry, could not open file tree.txt.')
+        sys.exit()
     
-tree = build_tree(input_file)
-if not tree:
-    print('tree.txt does not contain the correct representation of a tree.')
-    sys.exit()
-print_out(tree)
+    tree = build_tree(input_file)
+    if not tree:
+        print('tree.txt does not contain the correct representation of a tree.')
+        sys.exit()
+    print_out(tree)
 
-
+if __name__ == '__main__':
+    main()

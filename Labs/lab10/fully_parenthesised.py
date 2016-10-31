@@ -1,10 +1,3 @@
-# Uses the ArrayStack and the BinaryTree interfaces to build an expression tree and evaluate
-# an arithmetic expression written in infix, fully parenthesised with parentheses, brackets and braces,
-# and built from natural numbers using the binary +, -, * and / operators.             
-#
-# Written by Eric Martin for COMP9021
-
-
 import re
 
 from array_stack import ArrayStack, EmptyStackError
