@@ -54,7 +54,14 @@ class PriorityQueue():
             self.bubble_up(i//2)
             
     def bubble_down(self, i):
-        pass
+        child = 2 * i
+        if child < self.length and self.data[child + 1][1] > self.data[child][1]:
+            child += 1
+        if child <= self.length and self.data[child][1] > self.data[i][1]:
+            self.data[child], self.data[i] = self.data[i], self.data[child]
+            self.record[self.data[child][0]] = child
+            self.record[self.data[i][0]] = i
+            self.bubble_down(child)
 
     def resize(self, new_size):
         self.data = list(self.data[:self.length + 1]) + [None] * (new_size - self.length - 1)
