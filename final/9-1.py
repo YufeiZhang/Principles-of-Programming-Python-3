@@ -60,3 +60,8 @@ def evaluate(expression):
 
 
 print(evaluate('{1 + [((20*30)-400) / 500]}'))
+print(evaluate('100 + 3'))
+print(evaluate('(100 + 3'))
+print(evaluate('(100 + -3)'))
+print(evaluate('(100 \ 50)'))
+print(evaluate('(100 / 0)'))
